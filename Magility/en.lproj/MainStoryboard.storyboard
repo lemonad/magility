@@ -1,24 +1,500 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1906" systemVersion="11A511" targetRuntime="iOS.CocoaTouch.iPad" nextObjectID="6" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="ukQ-Ld-8yh">
     <dependencies>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="902"/>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development version="4300" defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
+        <!--Magility View Controller - Video Switch-->
         <scene sceneID="4">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
                 <viewController id="2" customClass="MagilityViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="sif-qd-fLO">
+                                <rect key="frame" x="394" y="161" width="354" height="221"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="2" eventType="touchUpInside" id="mMv-sa-Ihb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hello" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="t7F-Ht-A0o">
+                                <rect key="frame" x="20" y="20" width="728" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="World" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Mbt-15-YIv">
+                                <rect key="frame" x="20" y="84" width="728" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="ZS3-8I-V8k">
+                                <rect key="frame" x="20" y="161" width="354" height="221"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="2" eventType="touchUpInside" id="lMi-pe-Vx5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="ubs-sb-BfA">
+                                <rect key="frame" x="394" y="400" width="354" height="221"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="2" eventType="touchUpInside" id="Nqx-zq-red"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="FKk-fd-boh">
+                                <rect key="frame" x="20" y="400" width="354" height="221"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="2" eventType="touchUpInside" id="3fg-Sb-wdF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Status" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="bWL-Ua-Wdy">
+                                <rect key="frame" x="302" y="971" width="446" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="nMn-Th-teH">
+                                <rect key="frame" x="0.0" y="916" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items/>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Status" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="7mT-k0-5ZC">
+                                <rect key="frame" x="20" y="927" width="728" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89692283163265307" green="0.89692283163265307" blue="0.89692283163265307" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Video Switch" id="AuF-Jz-Bns">
+                        <barButtonItem key="backBarButtonItem" title="Done" id="fTu-qQ-74u"/>
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="QoY-Gx-NUL">
+                            <connections>
+                                <segue destination="Ixf-uc-z6N" kind="push" id="Z3X-Yu-S1E"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="buttonFour" destination="ubs-sb-BfA" id="at4-GF-xSf"/>
+                        <outlet property="buttonOne" destination="ZS3-8I-V8k" id="xoI-z1-MOU"/>
+                        <outlet property="buttonThree" destination="FKk-fd-boh" id="EHg-zq-r3e"/>
+                        <outlet property="buttonTwo" destination="sif-qd-fLO" id="P06-ES-XZK"/>
+                        <outlet property="statusLabel" destination="7mT-k0-5ZC" id="iTl-x8-DHC"/>
+                        <outlet property="subtitleLabel" destination="Mbt-15-YIv" id="kv4-Jy-pdb"/>
+                        <outlet property="titleLabel" destination="t7F-Ht-A0o" id="5vU-fH-lfh"/>
+                    </connections>
                 </viewController>
             </objects>
+            <point key="canvasLocation" x="955" y="-387"/>
+        </scene>
+        <!--Magility Settings View Controller - Settings-->
+        <scene sceneID="sw3-el-L86">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vZB-RY-VJm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="formSheet" id="Ixf-uc-z6N" customClass="MagilitySettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C3V-jB-zmw">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="W4K-ao-M3J">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="svw-rt-L3x">
+                                        <rect key="frame" x="20" y="209" width="336" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet"/>
+                                        <connections>
+                                            <action selector="subtitleEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="6YY-hJ-Y7e"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="jZf-ov-CB7">
+                                        <rect key="frame" x="20" y="105" width="355" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="BlR-2f-iXS">
+                                        <rect key="frame" x="20" y="321" width="336" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet"/>
+                                        <connections>
+                                            <action selector="serverEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="HZs-cf-0RY"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="RXm-1g-cKv">
+                                        <rect key="frame" x="20" y="180" width="336" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Settings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="xv6-L4-WQU">
+                                        <rect key="frame" x="20" y="20" width="728" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="eh3-d1-kkH">
+                                        <rect key="frame" x="20" y="457" width="336" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
+                                        <connections>
+                                            <action selector="passwordEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="LUs-gL-h2O"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="iPath Server" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="d7O-G8-Yfj">
+                                        <rect key="frame" x="20" y="285" width="336" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="ZJ1-4i-JjI">
+                                        <rect key="frame" x="20" y="141" width="336" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet"/>
+                                        <connections>
+                                            <action selector="titleEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="xSV-MI-FoT"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="i59-Oa-c0g">
+                                        <rect key="frame" x="20" y="428" width="336" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="axE-zg-vdX">
+                                        <rect key="frame" x="20" y="360" width="336" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="wSa-Ya-Tzd">
+                                        <rect key="frame" x="20" y="389" width="336" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet"/>
+                                        <connections>
+                                            <action selector="usernameEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="jlk-zh-qib"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="IS6-aH-R1h">
+                                        <rect key="frame" x="20" y="608" width="336" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet"/>
+                                        <connections>
+                                            <action selector="button1TitleEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="9Do-V9-B8N"/>
+                                            <action selector="textFieldDidBeginEditing:" destination="Ixf-uc-z6N" eventType="editingDidBegin" id="LRP-1L-BFm"/>
+                                            <action selector="textFieldDidEndEditing:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="Vgj-jJ-VnJ"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Preset Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="hO3-dA-x8I">
+                                        <rect key="frame" x="412" y="647" width="336" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Ui4-KD-mLg">
+                                        <rect key="frame" x="20" y="823" width="336" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet"/>
+                                        <connections>
+                                            <action selector="button3TitleEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="W2C-lf-AqT"/>
+                                            <action selector="textFieldDidBeginEditing:" destination="Ixf-uc-z6N" eventType="editingDidBegin" id="gWa-WE-zgg"/>
+                                            <action selector="textFieldDidEndEditing:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="8nc-VA-8S1"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Lower Left Button" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="gDA-gc-vFd">
+                                        <rect key="frame" x="20" y="758" width="336" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Upper Right Button" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Ag9-TD-YEi">
+                                        <rect key="frame" x="412" y="543" width="336" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Preset Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="kbH-0J-9iR">
+                                        <rect key="frame" x="20" y="862" width="336" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="PBr-i7-tcJ">
+                                        <rect key="frame" x="412" y="794" width="336" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="EJY-Wq-3Yt">
+                                        <rect key="frame" x="20" y="891" width="336" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet"/>
+                                        <connections>
+                                            <action selector="button3PresetEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="GFF-9q-K7k"/>
+                                            <action selector="textFieldDidBeginEditing:" destination="Ixf-uc-z6N" eventType="editingDidBegin" id="lIT-fu-AIs"/>
+                                            <action selector="textFieldDidEndEditing:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="OIJ-jk-iWm"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="ldl-Ku-vbS">
+                                        <rect key="frame" x="412" y="823" width="336" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                        <connections>
+                                            <action selector="button4TitleEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="4Bb-yJ-XjD"/>
+                                            <action selector="textFieldDidBeginEditing:" destination="Ixf-uc-z6N" eventType="editingDidBegin" id="aw7-3g-PEm"/>
+                                            <action selector="textFieldDidEndEditing:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="buP-Cq-RBg"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Upper Left Button" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="anz-d0-LTk">
+                                        <rect key="frame" x="20" y="543" width="336" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Owz-qf-TSM">
+                                        <rect key="frame" x="412" y="579" width="336" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Preset Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="HF4-9K-qiS">
+                                        <rect key="frame" x="412" y="862" width="336" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="uKz-Q0-M0H">
+                                        <rect key="frame" x="412" y="608" width="336" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                        <connections>
+                                            <action selector="button2TitleEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="8UD-gT-IP9"/>
+                                            <action selector="textFieldDidBeginEditing:" destination="Ixf-uc-z6N" eventType="editingDidBegin" id="zns-cL-ajj"/>
+                                            <action selector="textFieldDidEndEditing:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="tB6-YD-7oI"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Lower Right Button" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="FiP-o6-6o1">
+                                        <rect key="frame" x="412" y="758" width="336" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Preset Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="5dh-w3-u0p">
+                                        <rect key="frame" x="20" y="647" width="336" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="4Vw-yl-9fM">
+                                        <rect key="frame" x="20" y="579" width="336" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="6XB-dd-15B">
+                                        <rect key="frame" x="20" y="794" width="336" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Hoe-bJ-7at">
+                                        <rect key="frame" x="412" y="676" width="336" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                        <connections>
+                                            <action selector="button2PresetEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="dDW-Eb-HWO"/>
+                                            <action selector="textFieldDidBeginEditing:" destination="Ixf-uc-z6N" eventType="editingDidBegin" id="9qd-P5-zXv"/>
+                                            <action selector="textFieldDidEndEditing:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="dnP-cC-WEy"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="uLe-tr-sdE">
+                                        <rect key="frame" x="20" y="676" width="336" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet"/>
+                                        <connections>
+                                            <action selector="button1PresetEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="DUI-2k-EOd"/>
+                                            <action selector="textFieldDidBeginEditing:" destination="Ixf-uc-z6N" eventType="editingDidBegin" id="wVV-ct-Cts"/>
+                                            <action selector="textFieldDidEndEditing:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="W2h-KP-mxE"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Ip8-J6-W2j">
+                                        <rect key="frame" x="412" y="891" width="336" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                        <connections>
+                                            <action selector="button4PresetEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="5wL-k2-GBT"/>
+                                            <action selector="textFieldDidBeginEditing:" destination="Ixf-uc-z6N" eventType="editingDidBegin" id="vpz-WF-Xh3"/>
+                                            <action selector="textFieldDidEndEditing:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="YPK-zm-YKY"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="contentSize" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.89815237226277367" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="u0s-g0-Wiy">
+                        <barButtonItem key="backBarButtonItem" title="Done" id="sk4-ex-7oh"/>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="SubtitleText" destination="svw-rt-L3x" id="AgY-Lr-Epg"/>
+                        <outlet property="TitleText" destination="ZJ1-4i-JjI" id="luT-nK-c2C"/>
+                        <outlet property="agilityHostName" destination="BlR-2f-iXS" id="Ww6-iO-n1l"/>
+                        <outlet property="agilityPassword" destination="eh3-d1-kkH" id="cke-Hb-MVq"/>
+                        <outlet property="agilityUsername" destination="wSa-Ya-Tzd" id="HTq-ez-FEK"/>
+                        <outlet property="button1Preset" destination="uLe-tr-sdE" id="ss9-U9-v8d"/>
+                        <outlet property="button1Title" destination="IS6-aH-R1h" id="1j7-Rx-zRy"/>
+                        <outlet property="button2Preset" destination="Hoe-bJ-7at" id="Kk8-PD-z6p"/>
+                        <outlet property="button2Title" destination="uKz-Q0-M0H" id="Xze-ZM-CId"/>
+                        <outlet property="button3Preset" destination="EJY-Wq-3Yt" id="UcQ-Jw-DX4"/>
+                        <outlet property="button3Title" destination="Ui4-KD-mLg" id="KdU-Q7-YUc"/>
+                        <outlet property="button4Preset" destination="Ip8-J6-W2j" id="W9j-VC-qeh"/>
+                        <outlet property="button4Title" destination="ldl-Ku-vbS" id="4cT-Vv-HnQ"/>
+                        <outlet property="scrollView" destination="W4K-ao-M3J" id="jIg-gm-Rwu"/>
+                        <outlet property="subtitleText" destination="svw-rt-L3x" id="tNl-P1-W3H"/>
+                        <outlet property="titleText" destination="ZJ1-4i-JjI" id="6fs-0S-8xa"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1840" y="-387"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zvx-cX-JFG">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hnK-XH-INU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="ukQ-Ld-8yh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackOpaque" id="ypq-C4-RbV">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="DKL-sN-AOm"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="89" y="-387"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="MagilitySettingsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MagilitySettingsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="agilityHostName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="agilityPassword" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="agilityUsername" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="button1Preset" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="button1Title" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="button2Preset" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="button2Title" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="button3Preset" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="button3Title" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="button4Preset" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="button4Title" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="subtitleText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="titleText" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="MagilityViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MagilityViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="buttonFour" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonOne" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonThree" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonTwo" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="statusLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="subtitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

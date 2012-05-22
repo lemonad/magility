@@ -15,22 +15,87 @@
 		DD9A1D6B156C1DAA00DB528C /* MagilityAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9A1D6A156C1DAA00DB528C /* MagilityAppDelegate.m */; };
 		DD9A1D6E156C1DAA00DB528C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9A1D6C156C1DAA00DB528C /* MainStoryboard.storyboard */; };
 		DD9A1D71156C1DAA00DB528C /* MagilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9A1D70156C1DAA00DB528C /* MagilityViewController.m */; };
+		DD9A1D87156C298400DB528C /* button-background-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9A1D7E156C298400DB528C /* button-background-disabled.png */; };
+		DD9A1D88156C298400DB528C /* button-background-shaded.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9A1D7F156C298400DB528C /* button-background-shaded.png */; };
+		DD9A1D89156C298400DB528C /* button-background.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9A1D80156C298400DB528C /* button-background.png */; };
+		DD9A1D8A156C298400DB528C /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9A1D81156C298400DB528C /* Icon-72.png */; };
+		DD9A1D8B156C298400DB528C /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9A1D82156C298400DB528C /* Icon-Small-50.png */; };
+		DD9A1D8C156C298400DB528C /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9A1D83156C298400DB528C /* Icon-Small.png */; };
+		DD9A1D8D156C298400DB528C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9A1D84156C298400DB528C /* Icon.png */; };
+		DD9A1D8E156C298400DB528C /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9A1D85156C298400DB528C /* Icon@2x.png */; };
+		DD9A1D8F156C298400DB528C /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9A1D86156C298400DB528C /* iTunesArtwork.png */; };
+		DD9A1DAF156C299700DB528C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DD9A1D91156C299700DB528C /* .gitignore */; };
+		DD9A1DB0156C299700DB528C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DD9A1D92156C299700DB528C /* README.md */; };
+		DD9A1DBA156C299700DB528C /* SMWebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9A1DA7156C299700DB528C /* SMWebRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DD9A1DBB156C299700DB528C /* SMXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9A1DAA156C299700DB528C /* SMXMLDocument.m */; };
+		DD9A1DC5156C29BB00DB528C /* AgilityBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9A1DC0156C29BB00DB528C /* AgilityBackend.m */; };
+		DD9A1DC6156C29BB00DB528C /* MagilitySettings.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9A1DC2156C29BB00DB528C /* MagilitySettings.m */; };
+		DD9A1DC7156C29BB00DB528C /* MagilitySettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9A1DC4156C29BB00DB528C /* MagilitySettingsViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD9A1DBD156C299800DB528C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9A1DA2156C299700DB528C /* WebRequestSamples.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = WebRequestSamples;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DD9A1D56156C1DAA00DB528C /* Magility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9A1D5A156C1DAA00DB528C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DD9A1D5C156C1DAA00DB528C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DD9A1D5E156C1DAA00DB528C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DD9A1D62156C1DAA00DB528C /* Magility-Info.plist */ = {isa = PBXFileReference; path = "Magility-Info.plist"; sourceTree = "<group>"; };
+		DD9A1D62156C1DAA00DB528C /* Magility-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Magility-Info.plist"; sourceTree = "<group>"; };
 		DD9A1D64156C1DAA00DB528C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DD9A1D66156C1DAA00DB528C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DD9A1D68156C1DAA00DB528C /* Magility-Prefix.pch */ = {isa = PBXFileReference; path = "Magility-Prefix.pch"; sourceTree = "<group>"; };
-		DD9A1D69156C1DAA00DB528C /* MagilityAppDelegate.h */ = {isa = PBXFileReference; path = MagilityAppDelegate.h; sourceTree = "<group>"; };
+		DD9A1D68156C1DAA00DB528C /* Magility-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Magility-Prefix.pch"; sourceTree = "<group>"; };
+		DD9A1D69156C1DAA00DB528C /* MagilityAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MagilityAppDelegate.h; sourceTree = "<group>"; };
 		DD9A1D6A156C1DAA00DB528C /* MagilityAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagilityAppDelegate.m; sourceTree = "<group>"; };
 		DD9A1D6D156C1DAA00DB528C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		DD9A1D6F156C1DAA00DB528C /* MagilityViewController.h */ = {isa = PBXFileReference; path = MagilityViewController.h; sourceTree = "<group>"; };
+		DD9A1D6F156C1DAA00DB528C /* MagilityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MagilityViewController.h; sourceTree = "<group>"; };
 		DD9A1D70156C1DAA00DB528C /* MagilityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagilityViewController.m; sourceTree = "<group>"; };
+		DD9A1D77156C1F3200DB528C /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = /Users/jonas/Projects/iOS/Magility/Magility/sv.lproj/InfoPlist.strings; sourceTree = "<absolute>"; };
+		DD9A1D78156C1F3200DB528C /* sv */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = sv; path = /Users/jonas/Projects/iOS/Magility/Magility/sv.lproj/MainStoryboard.storyboard; sourceTree = "<absolute>"; };
+		DD9A1D7E156C298400DB528C /* button-background-disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-background-disabled.png"; sourceTree = "<group>"; };
+		DD9A1D7F156C298400DB528C /* button-background-shaded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-background-shaded.png"; sourceTree = "<group>"; };
+		DD9A1D80156C298400DB528C /* button-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-background.png"; sourceTree = "<group>"; };
+		DD9A1D81156C298400DB528C /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		DD9A1D82156C298400DB528C /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		DD9A1D83156C298400DB528C /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		DD9A1D84156C298400DB528C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		DD9A1D85156C298400DB528C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		DD9A1D86156C298400DB528C /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		DD9A1D91156C299700DB528C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		DD9A1D92156C299700DB528C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		DD9A1D94156C299700DB528C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DD9A1D95156C299700DB528C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DD9A1D96156C299700DB528C /* BrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserController.h; sourceTree = "<group>"; };
+		DD9A1D97156C299700DB528C /* BrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserController.m; sourceTree = "<group>"; };
+		DD9A1D98156C299700DB528C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		DD9A1D99156C299700DB528C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		DD9A1D9A156C299700DB528C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD9A1D9B156C299700DB528C /* RSSFeedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSFeedController.h; sourceTree = "<group>"; };
+		DD9A1D9C156C299700DB528C /* RSSFeedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSFeedController.m; sourceTree = "<group>"; };
+		DD9A1D9D156C299700DB528C /* RSSItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSItem.h; sourceTree = "<group>"; };
+		DD9A1D9E156C299700DB528C /* RSSItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSItem.m; sourceTree = "<group>"; };
+		DD9A1D9F156C299700DB528C /* SMXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXMLDocument.h; sourceTree = "<group>"; };
+		DD9A1DA0156C299700DB528C /* SMXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXMLDocument.m; sourceTree = "<group>"; };
+		DD9A1DA1156C299700DB528C /* WebRequestSamples-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WebRequestSamples-Info.plist"; sourceTree = "<group>"; };
+		DD9A1DA2156C299700DB528C /* WebRequestSamples.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = WebRequestSamples.xcodeproj; sourceTree = "<group>"; };
+		DD9A1DA5156C299700DB528C /* WebRequestSamples_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRequestSamples_Prefix.pch; sourceTree = "<group>"; };
+		DD9A1DA6156C299700DB528C /* SMWebRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMWebRequest.h; sourceTree = "<group>"; };
+		DD9A1DA7156C299700DB528C /* SMWebRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMWebRequest.m; sourceTree = "<group>"; };
+		DD9A1DA9156C299700DB528C /* SMXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXMLDocument.h; sourceTree = "<group>"; };
+		DD9A1DAA156C299700DB528C /* SMXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXMLDocument.m; sourceTree = "<group>"; };
+		DD9A1DBF156C29BB00DB528C /* AgilityBackend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgilityBackend.h; sourceTree = "<group>"; };
+		DD9A1DC0156C29BB00DB528C /* AgilityBackend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgilityBackend.m; sourceTree = "<group>"; };
+		DD9A1DC1156C29BB00DB528C /* MagilitySettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagilitySettings.h; sourceTree = "<group>"; };
+		DD9A1DC2156C29BB00DB528C /* MagilitySettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagilitySettings.m; sourceTree = "<group>"; };
+		DD9A1DC3156C29BB00DB528C /* MagilitySettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagilitySettingsViewController.h; sourceTree = "<group>"; };
+		DD9A1DC4156C29BB00DB528C /* MagilitySettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagilitySettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,11 +115,14 @@
 		DD9A1D4B156C1DA900DB528C = {
 			isa = PBXGroup;
 			children = (
+				DD9A1D90156C299700DB528C /* smwebrequest */,
+				DD9A1DA8156C299700DB528C /* smxmldocument */,
 				DD9A1D60156C1DAA00DB528C /* Magility */,
 				DD9A1D59156C1DAA00DB528C /* Frameworks */,
 				DD9A1D57156C1DAA00DB528C /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		DD9A1D57156C1DAA00DB528C /* Products */ = {
 			isa = PBXGroup;
@@ -77,11 +145,18 @@
 		DD9A1D60156C1DAA00DB528C /* Magility */ = {
 			isa = PBXGroup;
 			children = (
+				DD9A1DBF156C29BB00DB528C /* AgilityBackend.h */,
+				DD9A1DC0156C29BB00DB528C /* AgilityBackend.m */,
+				DD9A1DC1156C29BB00DB528C /* MagilitySettings.h */,
+				DD9A1DC2156C29BB00DB528C /* MagilitySettings.m */,
+				DD9A1DC3156C29BB00DB528C /* MagilitySettingsViewController.h */,
+				DD9A1DC4156C29BB00DB528C /* MagilitySettingsViewController.m */,
 				DD9A1D69156C1DAA00DB528C /* MagilityAppDelegate.h */,
 				DD9A1D6A156C1DAA00DB528C /* MagilityAppDelegate.m */,
-				DD9A1D6C156C1DAA00DB528C /* MainStoryboard.storyboard */,
 				DD9A1D6F156C1DAA00DB528C /* MagilityViewController.h */,
 				DD9A1D70156C1DAA00DB528C /* MagilityViewController.m */,
+				DD9A1D6C156C1DAA00DB528C /* MainStoryboard.storyboard */,
+				DD9A1D7D156C298400DB528C /* graphics */,
 				DD9A1D61156C1DAA00DB528C /* Supporting Files */,
 			);
 			path = Magility;
@@ -96,6 +171,76 @@
 				DD9A1D68156C1DAA00DB528C /* Magility-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD9A1D7D156C298400DB528C /* graphics */ = {
+			isa = PBXGroup;
+			children = (
+				DD9A1D7E156C298400DB528C /* button-background-disabled.png */,
+				DD9A1D7F156C298400DB528C /* button-background-shaded.png */,
+				DD9A1D80156C298400DB528C /* button-background.png */,
+				DD9A1D81156C298400DB528C /* Icon-72.png */,
+				DD9A1D82156C298400DB528C /* Icon-Small-50.png */,
+				DD9A1D83156C298400DB528C /* Icon-Small.png */,
+				DD9A1D84156C298400DB528C /* Icon.png */,
+				DD9A1D85156C298400DB528C /* Icon@2x.png */,
+				DD9A1D86156C298400DB528C /* iTunesArtwork.png */,
+			);
+			path = graphics;
+			sourceTree = "<group>";
+		};
+		DD9A1D90156C299700DB528C /* smwebrequest */ = {
+			isa = PBXGroup;
+			children = (
+				DD9A1D91156C299700DB528C /* .gitignore */,
+				DD9A1D92156C299700DB528C /* README.md */,
+				DD9A1D93156C299700DB528C /* SampleProject */,
+				DD9A1DA6156C299700DB528C /* SMWebRequest.h */,
+				DD9A1DA7156C299700DB528C /* SMWebRequest.m */,
+			);
+			name = smwebrequest;
+			path = Magility/smwebrequest;
+			sourceTree = "<group>";
+		};
+		DD9A1D93156C299700DB528C /* SampleProject */ = {
+			isa = PBXGroup;
+			children = (
+				DD9A1D94156C299700DB528C /* AppDelegate.h */,
+				DD9A1D95156C299700DB528C /* AppDelegate.m */,
+				DD9A1D96156C299700DB528C /* BrowserController.h */,
+				DD9A1D97156C299700DB528C /* BrowserController.m */,
+				DD9A1D98156C299700DB528C /* Icon.png */,
+				DD9A1D99156C299700DB528C /* Icon@2x.png */,
+				DD9A1D9A156C299700DB528C /* main.m */,
+				DD9A1D9B156C299700DB528C /* RSSFeedController.h */,
+				DD9A1D9C156C299700DB528C /* RSSFeedController.m */,
+				DD9A1D9D156C299700DB528C /* RSSItem.h */,
+				DD9A1D9E156C299700DB528C /* RSSItem.m */,
+				DD9A1D9F156C299700DB528C /* SMXMLDocument.h */,
+				DD9A1DA0156C299700DB528C /* SMXMLDocument.m */,
+				DD9A1DA1156C299700DB528C /* WebRequestSamples-Info.plist */,
+				DD9A1DA2156C299700DB528C /* WebRequestSamples.xcodeproj */,
+				DD9A1DA5156C299700DB528C /* WebRequestSamples_Prefix.pch */,
+			);
+			path = SampleProject;
+			sourceTree = "<group>";
+		};
+		DD9A1DA3156C299700DB528C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD9A1DBE156C299800DB528C /* WebRequestSamples.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD9A1DA8156C299700DB528C /* smxmldocument */ = {
+			isa = PBXGroup;
+			children = (
+				DD9A1DA9156C299700DB528C /* SMXMLDocument.h */,
+				DD9A1DAA156C299700DB528C /* SMXMLDocument.m */,
+			);
+			name = smxmldocument;
+			path = Magility/smxmldocument;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +271,7 @@
 			attributes = {
 				CLASSPREFIX = Magility;
 				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Karnkraftsakerhet och Utbildning AB";
 			};
 			buildConfigurationList = DD9A1D50156C1DA900DB528C /* Build configuration list for PBXProject "Magility" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -137,12 +283,28 @@
 			mainGroup = DD9A1D4B156C1DA900DB528C;
 			productRefGroup = DD9A1D57156C1DAA00DB528C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DD9A1DA3156C299700DB528C /* Products */;
+					ProjectRef = DD9A1DA2156C299700DB528C /* WebRequestSamples.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DD9A1D55156C1DAA00DB528C /* Magility */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DD9A1DBE156C299800DB528C /* WebRequestSamples.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = WebRequestSamples.app;
+			remoteRef = DD9A1DBD156C299800DB528C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DD9A1D54156C1DAA00DB528C /* Resources */ = {
@@ -151,6 +313,17 @@
 			files = (
 				DD9A1D65156C1DAA00DB528C /* InfoPlist.strings in Resources */,
 				DD9A1D6E156C1DAA00DB528C /* MainStoryboard.storyboard in Resources */,
+				DD9A1D87156C298400DB528C /* button-background-disabled.png in Resources */,
+				DD9A1D88156C298400DB528C /* button-background-shaded.png in Resources */,
+				DD9A1D89156C298400DB528C /* button-background.png in Resources */,
+				DD9A1D8A156C298400DB528C /* Icon-72.png in Resources */,
+				DD9A1D8B156C298400DB528C /* Icon-Small-50.png in Resources */,
+				DD9A1D8C156C298400DB528C /* Icon-Small.png in Resources */,
+				DD9A1D8D156C298400DB528C /* Icon.png in Resources */,
+				DD9A1D8E156C298400DB528C /* Icon@2x.png in Resources */,
+				DD9A1D8F156C298400DB528C /* iTunesArtwork.png in Resources */,
+				DD9A1DAF156C299700DB528C /* .gitignore in Resources */,
+				DD9A1DB0156C299700DB528C /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +337,11 @@
 				DD9A1D67156C1DAA00DB528C /* main.m in Sources */,
 				DD9A1D6B156C1DAA00DB528C /* MagilityAppDelegate.m in Sources */,
 				DD9A1D71156C1DAA00DB528C /* MagilityViewController.m in Sources */,
+				DD9A1DBA156C299700DB528C /* SMWebRequest.m in Sources */,
+				DD9A1DBB156C299700DB528C /* SMXMLDocument.m in Sources */,
+				DD9A1DC5156C29BB00DB528C /* AgilityBackend.m in Sources */,
+				DD9A1DC6156C29BB00DB528C /* MagilitySettings.m in Sources */,
+				DD9A1DC7156C29BB00DB528C /* MagilitySettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +352,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				DD9A1D64156C1DAA00DB528C /* en */,
+				DD9A1D77156C1F3200DB528C /* sv */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -182,6 +361,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				DD9A1D6D156C1DAA00DB528C /* en */,
+				DD9A1D78156C1F3200DB528C /* sv */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
