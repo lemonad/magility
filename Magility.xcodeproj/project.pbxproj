@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD9A1D5B156C1DAA00DB528C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9A1D5A156C1DAA00DB528C /* UIKit.framework */; };
+		DD9A1D5D156C1DAA00DB528C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9A1D5C156C1DAA00DB528C /* Foundation.framework */; };
+		DD9A1D5F156C1DAA00DB528C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9A1D5E156C1DAA00DB528C /* CoreGraphics.framework */; };
+		DD9A1D65156C1DAA00DB528C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD9A1D63156C1DAA00DB528C /* InfoPlist.strings */; };
+		DD9A1D67156C1DAA00DB528C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9A1D66156C1DAA00DB528C /* main.m */; };
+		DD9A1D6B156C1DAA00DB528C /* MagilityAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9A1D6A156C1DAA00DB528C /* MagilityAppDelegate.m */; };
+		DD9A1D6E156C1DAA00DB528C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9A1D6C156C1DAA00DB528C /* MainStoryboard.storyboard */; };
+		DD9A1D71156C1DAA00DB528C /* MagilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9A1D70156C1DAA00DB528C /* MagilityViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DD9A1D56156C1DAA00DB528C /* Magility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magility.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9A1D5A156C1DAA00DB528C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DD9A1D5C156C1DAA00DB528C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DD9A1D5E156C1DAA00DB528C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DD9A1D62156C1DAA00DB528C /* Magility-Info.plist */ = {isa = PBXFileReference; path = "Magility-Info.plist"; sourceTree = "<group>"; };
+		DD9A1D64156C1DAA00DB528C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD9A1D66156C1DAA00DB528C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD9A1D68156C1DAA00DB528C /* Magility-Prefix.pch */ = {isa = PBXFileReference; path = "Magility-Prefix.pch"; sourceTree = "<group>"; };
+		DD9A1D69156C1DAA00DB528C /* MagilityAppDelegate.h */ = {isa = PBXFileReference; path = MagilityAppDelegate.h; sourceTree = "<group>"; };
+		DD9A1D6A156C1DAA00DB528C /* MagilityAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagilityAppDelegate.m; sourceTree = "<group>"; };
+		DD9A1D6D156C1DAA00DB528C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		DD9A1D6F156C1DAA00DB528C /* MagilityViewController.h */ = {isa = PBXFileReference; path = MagilityViewController.h; sourceTree = "<group>"; };
+		DD9A1D70156C1DAA00DB528C /* MagilityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagilityViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD9A1D53156C1DAA00DB528C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9A1D5B156C1DAA00DB528C /* UIKit.framework in Frameworks */,
+				DD9A1D5D156C1DAA00DB528C /* Foundation.framework in Frameworks */,
+				DD9A1D5F156C1DAA00DB528C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD9A1D4B156C1DA900DB528C = {
+			isa = PBXGroup;
+			children = (
+				DD9A1D60156C1DAA00DB528C /* Magility */,
+				DD9A1D59156C1DAA00DB528C /* Frameworks */,
+				DD9A1D57156C1DAA00DB528C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD9A1D57156C1DAA00DB528C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD9A1D56156C1DAA00DB528C /* Magility.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD9A1D59156C1DAA00DB528C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD9A1D5A156C1DAA00DB528C /* UIKit.framework */,
+				DD9A1D5C156C1DAA00DB528C /* Foundation.framework */,
+				DD9A1D5E156C1DAA00DB528C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD9A1D60156C1DAA00DB528C /* Magility */ = {
+			isa = PBXGroup;
+			children = (
+				DD9A1D69156C1DAA00DB528C /* MagilityAppDelegate.h */,
+				DD9A1D6A156C1DAA00DB528C /* MagilityAppDelegate.m */,
+				DD9A1D6C156C1DAA00DB528C /* MainStoryboard.storyboard */,
+				DD9A1D6F156C1DAA00DB528C /* MagilityViewController.h */,
+				DD9A1D70156C1DAA00DB528C /* MagilityViewController.m */,
+				DD9A1D61156C1DAA00DB528C /* Supporting Files */,
+			);
+			path = Magility;
+			sourceTree = "<group>";
+		};
+		DD9A1D61156C1DAA00DB528C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD9A1D62156C1DAA00DB528C /* Magility-Info.plist */,
+				DD9A1D63156C1DAA00DB528C /* InfoPlist.strings */,
+				DD9A1D66156C1DAA00DB528C /* main.m */,
+				DD9A1D68156C1DAA00DB528C /* Magility-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD9A1D55156C1DAA00DB528C /* Magility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9A1D74156C1DAA00DB528C /* Build configuration list for PBXNativeTarget "Magility" */;
+			buildPhases = (
+				DD9A1D52156C1DAA00DB528C /* Sources */,
+				DD9A1D53156C1DAA00DB528C /* Frameworks */,
+				DD9A1D54156C1DAA00DB528C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Magility;
+			productName = Magility;
+			productReference = DD9A1D56156C1DAA00DB528C /* Magility.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD9A1D4D156C1DA900DB528C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Magility;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = DD9A1D50156C1DA900DB528C /* Build configuration list for PBXProject "Magility" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DD9A1D4B156C1DA900DB528C;
+			productRefGroup = DD9A1D57156C1DAA00DB528C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD9A1D55156C1DAA00DB528C /* Magility */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD9A1D54156C1DAA00DB528C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9A1D65156C1DAA00DB528C /* InfoPlist.strings in Resources */,
+				DD9A1D6E156C1DAA00DB528C /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD9A1D52156C1DAA00DB528C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9A1D67156C1DAA00DB528C /* main.m in Sources */,
+				DD9A1D6B156C1DAA00DB528C /* MagilityAppDelegate.m in Sources */,
+				DD9A1D71156C1DAA00DB528C /* MagilityViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DD9A1D63156C1DAA00DB528C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD9A1D64156C1DAA00DB528C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DD9A1D6C156C1DAA00DB528C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD9A1D6D156C1DAA00DB528C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD9A1D72156C1DAA00DB528C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		DD9A1D73156C1DAA00DB528C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD9A1D75156C1DAA00DB528C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Magility/Magility-Prefix.pch";
+				INFOPLIST_FILE = "Magility/Magility-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DD9A1D76156C1DAA00DB528C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Magility/Magility-Prefix.pch";
+				INFOPLIST_FILE = "Magility/Magility-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD9A1D50156C1DA900DB528C /* Build configuration list for PBXProject "Magility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9A1D72156C1DAA00DB528C /* Debug */,
+				DD9A1D73156C1DAA00DB528C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD9A1D74156C1DAA00DB528C /* Build configuration list for PBXNativeTarget "Magility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9A1D75156C1DAA00DB528C /* Debug */,
+				DD9A1D76156C1DAA00DB528C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD9A1D4D156C1DA900DB528C /* Project object */;
+}
