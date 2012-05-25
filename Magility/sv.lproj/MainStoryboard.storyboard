@@ -107,7 +107,7 @@
                             </toolbar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Status" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="7mT-k0-5ZC">
                                 <rect key="frame" x="20" y="927" width="728" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -153,9 +153,10 @@
                                         <rect key="frame" x="20" y="209" width="336" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="done"/>
                                         <connections>
                                             <action selector="subtitleEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="6YY-hJ-Y7e"/>
+                                            <outlet property="delegate" destination="Ixf-uc-z6N" id="O3Q-UP-zDY"/>
                                         </connections>
                                     </textField>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Rubrik" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="jZf-ov-CB7">
@@ -169,9 +170,10 @@
                                         <rect key="frame" x="20" y="321" width="336" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="done"/>
                                         <connections>
                                             <action selector="serverEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="HZs-cf-0RY"/>
+                                            <outlet property="delegate" destination="Ixf-uc-z6N" id="saz-gu-RwD"/>
                                         </connections>
                                     </textField>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Underrubrik" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="RXm-1g-cKv">
@@ -192,9 +194,10 @@
                                         <rect key="frame" x="20" y="457" width="336" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" secureTextEntry="YES"/>
                                         <connections>
                                             <action selector="passwordEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="LUs-gL-h2O"/>
+                                            <outlet property="delegate" destination="Ixf-uc-z6N" id="T8L-hI-JVq"/>
                                         </connections>
                                     </textField>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="iPath-server" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="d7O-G8-Yfj">
@@ -208,9 +211,10 @@
                                         <rect key="frame" x="20" y="141" width="336" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="done"/>
                                         <connections>
                                             <action selector="titleEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="xSV-MI-FoT"/>
+                                            <outlet property="delegate" destination="Ixf-uc-z6N" id="8Ka-hf-hji"/>
                                         </connections>
                                     </textField>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Lösenord" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="i59-Oa-c0g">
@@ -231,20 +235,22 @@
                                         <rect key="frame" x="20" y="389" width="336" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="done"/>
                                         <connections>
                                             <action selector="usernameEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="jlk-zh-qib"/>
+                                            <outlet property="delegate" destination="Ixf-uc-z6N" id="EoW-bS-3CY"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="IS6-aH-R1h">
                                         <rect key="frame" x="20" y="608" width="336" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="done"/>
                                         <connections>
                                             <action selector="button1TitleEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="9Do-V9-B8N"/>
                                             <action selector="textFieldDidBeginEditing:" destination="Ixf-uc-z6N" eventType="editingDidBegin" id="LRP-1L-BFm"/>
                                             <action selector="textFieldDidEndEditing:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="Vgj-jJ-VnJ"/>
+                                            <outlet property="delegate" destination="Ixf-uc-z6N" id="vVl-29-AUW"/>
                                         </connections>
                                     </textField>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Presetnamn" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="hO3-dA-x8I">
@@ -258,11 +264,12 @@
                                         <rect key="frame" x="20" y="823" width="336" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="done"/>
                                         <connections>
                                             <action selector="button3TitleEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="W2C-lf-AqT"/>
                                             <action selector="textFieldDidBeginEditing:" destination="Ixf-uc-z6N" eventType="editingDidBegin" id="gWa-WE-zgg"/>
                                             <action selector="textFieldDidEndEditing:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="8nc-VA-8S1"/>
+                                            <outlet property="delegate" destination="Ixf-uc-z6N" id="vAc-pB-Iwc"/>
                                         </connections>
                                     </textField>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Nedre vänstra knappen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="gDA-gc-vFd">
@@ -297,22 +304,24 @@
                                         <rect key="frame" x="20" y="891" width="336" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="done"/>
                                         <connections>
                                             <action selector="button3PresetEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="GFF-9q-K7k"/>
                                             <action selector="textFieldDidBeginEditing:" destination="Ixf-uc-z6N" eventType="editingDidBegin" id="lIT-fu-AIs"/>
                                             <action selector="textFieldDidEndEditing:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="OIJ-jk-iWm"/>
+                                            <outlet property="delegate" destination="Ixf-uc-z6N" id="EJe-9m-7p5"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="ldl-Ku-vbS">
                                         <rect key="frame" x="412" y="823" width="336" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="done"/>
                                         <connections>
                                             <action selector="button4TitleEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="4Bb-yJ-XjD"/>
                                             <action selector="textFieldDidBeginEditing:" destination="Ixf-uc-z6N" eventType="editingDidBegin" id="aw7-3g-PEm"/>
                                             <action selector="textFieldDidEndEditing:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="buP-Cq-RBg"/>
+                                            <outlet property="delegate" destination="Ixf-uc-z6N" id="eQe-YF-AhR"/>
                                         </connections>
                                     </textField>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Övre vänstra knappen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="anz-d0-LTk">
@@ -340,11 +349,12 @@
                                         <rect key="frame" x="412" y="608" width="336" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="done"/>
                                         <connections>
                                             <action selector="button2TitleEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="8UD-gT-IP9"/>
                                             <action selector="textFieldDidBeginEditing:" destination="Ixf-uc-z6N" eventType="editingDidBegin" id="zns-cL-ajj"/>
                                             <action selector="textFieldDidEndEditing:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="tB6-YD-7oI"/>
+                                            <outlet property="delegate" destination="Ixf-uc-z6N" id="XFQ-CS-sXD"/>
                                         </connections>
                                     </textField>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Nedre högra knappen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="FiP-o6-6o1">
@@ -379,39 +389,45 @@
                                         <rect key="frame" x="412" y="676" width="336" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="done"/>
                                         <connections>
                                             <action selector="button2PresetEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="dDW-Eb-HWO"/>
                                             <action selector="textFieldDidBeginEditing:" destination="Ixf-uc-z6N" eventType="editingDidBegin" id="9qd-P5-zXv"/>
                                             <action selector="textFieldDidEndEditing:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="dnP-cC-WEy"/>
+                                            <outlet property="delegate" destination="Ixf-uc-z6N" id="JgJ-Xg-voi"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="uLe-tr-sdE">
                                         <rect key="frame" x="20" y="676" width="336" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="done"/>
                                         <connections>
                                             <action selector="button1PresetEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="DUI-2k-EOd"/>
                                             <action selector="textFieldDidBeginEditing:" destination="Ixf-uc-z6N" eventType="editingDidBegin" id="wVV-ct-Cts"/>
                                             <action selector="textFieldDidEndEditing:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="W2h-KP-mxE"/>
+                                            <outlet property="delegate" destination="Ixf-uc-z6N" id="ma3-7M-4UB"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Ip8-J6-W2j">
                                         <rect key="frame" x="412" y="891" width="336" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="done"/>
                                         <connections>
                                             <action selector="button4PresetEdited:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="5wL-k2-GBT"/>
                                             <action selector="textFieldDidBeginEditing:" destination="Ixf-uc-z6N" eventType="editingDidBegin" id="vpz-WF-Xh3"/>
                                             <action selector="textFieldDidEndEditing:" destination="Ixf-uc-z6N" eventType="editingDidEnd" id="YPK-zm-YKY"/>
+                                            <outlet property="delegate" destination="Ixf-uc-z6N" id="B4e-b1-EWn"/>
                                         </connections>
                                     </textField>
                                 </subviews>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="contentSize" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="Ixf-uc-z6N" id="tEc-f4-EDi"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.89815237226277367" alpha="1" colorSpace="calibratedWhite"/>
@@ -421,8 +437,6 @@
                     </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
-                        <outlet property="SubtitleText" destination="svw-rt-L3x" id="AgY-Lr-Epg"/>
-                        <outlet property="TitleText" destination="ZJ1-4i-JjI" id="luT-nK-c2C"/>
                         <outlet property="agilityHostName" destination="BlR-2f-iXS" id="Ww6-iO-n1l"/>
                         <outlet property="agilityPassword" destination="eh3-d1-kkH" id="cke-Hb-MVq"/>
                         <outlet property="agilityUsername" destination="wSa-Ya-Tzd" id="HTq-ez-FEK"/>

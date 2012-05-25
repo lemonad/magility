@@ -12,6 +12,7 @@
 @interface MagilitySettingsViewController()
 @property (nonatomic) UITextField *activeField;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) UITapGestureRecognizer *singleTap;
 @end
 
 @implementation MagilitySettingsViewController
@@ -30,6 +31,7 @@
 @synthesize button2Preset = _button2Preset;
 @synthesize button3Preset = _button3Preset;
 @synthesize button4Preset = _button4Preset;
+@synthesize singleTap = _singleTap;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -85,11 +87,26 @@
                                defaultstr:@""];
 
     [self registerForKeyboardNotifications];
+
+    /* Dismiss keyboard on scrollview touch */
+    self.singleTap = [[UITapGestureRecognizer alloc]
+                      initWithTarget:self
+                              action:@selector(singleTapGestureCaptured:)];
+    self.singleTap.cancelsTouchesInView = NO;
+    [self.scrollView addGestureRecognizer:self.singleTap];
+}
+
+/* Dismiss keyboard on scrollview touch */
+- (void)singleTapGestureCaptured:(UITapGestureRecognizer *)gesture {
+    // Perhaps we need to check touchPoint for the correct kind of touch?
+    // CGPoint touchPoint = [gesture locationInView:self.scrollView];
+    [self.view endEditing:YES];
 }
 
 - (void)viewDidUnload
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [self.scrollView removeGestureRecognizer:self.singleTap];
 
     [self setTitleText:nil];
     [self setSubtitleText:nil];
@@ -171,6 +188,7 @@
 
 - (IBAction)textFieldDidEndEditing:(UITextField *)sender {
     self.activeField = nil;
+    [sender resignFirstResponder];
 }
 
 - (IBAction)titleEdited:(UITextField *)sender {
@@ -230,6 +248,11 @@
     [[NSNotificationCenter defaultCenter]
      postNotificationName:@"SettingsChanged"
                    object:nil];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
 }
 
 @end
