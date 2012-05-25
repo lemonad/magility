@@ -152,11 +152,22 @@
     SMWebRequest *request = [SMWebRequest requestWithURL:url];
     [request addTarget:self action:@selector(loginComplete:)
       forRequestEvents:SMWebRequestEventComplete];
+    [request addTarget:self action:@selector(loginError:)
+      forRequestEvents:SMWebRequestEventError];
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     [self.mainView.statusLabel setText:@"Logging in..."];
     [request start];
 }
 
+- (void)loginError:(NSError *)theError {
+    NSLog(@"Error while logging in: %@", theError);
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    [self.mainView.statusLabel setText:@"Could not log in, server did not respond"];
+}
+
 - (void)loginComplete:(NSData *)data {
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+
     NSError *error;
     SMXMLDocument *document = [SMXMLDocument documentWithData:data error:&error];
 
@@ -232,11 +243,22 @@
     [request addTarget:self
                 action:@selector(getPresetsComplete:)
       forRequestEvents:SMWebRequestEventComplete];
+    [request addTarget:self action:@selector(getPresetsError:)
+      forRequestEvents:SMWebRequestEventError];
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     [self.mainView.statusLabel setText:@"Fetching presets..."];
     [request start];
 }
 
+- (void)getPresetsError:(NSError *)theError {
+    NSLog(@"Error while getting presets: %@", theError);
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    [self.mainView.statusLabel setText:@"Could not get presets, server did not respond"];
+}
+
 - (void)getPresetsComplete:(NSData *)data {
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+
     // The iPath API returns invalid xml (!) so we need to fix
     // that before parsing
     [self.mainView.statusLabel setText:@"Correcting XML"];
@@ -319,11 +341,22 @@
     [request addTarget:self
                 action:@selector(connectPresetComplete:)
       forRequestEvents:SMWebRequestEventComplete];
+    [request addTarget:self action:@selector(connectPresetError:)
+      forRequestEvents:SMWebRequestEventError];
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     [self.mainView.statusLabel setText:@"Connecting preset..."];
     [request start];
 }
 
+- (void)connectPresetError:(NSError *)theError {
+    NSLog(@"Error while connecting preset: %@", theError);
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    [self.mainView.statusLabel setText:@"Could not connect preset, server did not respond"];
+}
+
 - (void)connectPresetComplete:(NSData *)data {
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+
     NSError *error;
     SMXMLDocument *document = [SMXMLDocument documentWithData:data error:&error];
     if (error) {
