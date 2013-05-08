@@ -47,8 +47,8 @@
 		DD9A1D6D156C1DAA00DB528C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		DD9A1D6F156C1DAA00DB528C /* MagilityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MagilityViewController.h; sourceTree = "<group>"; };
 		DD9A1D70156C1DAA00DB528C /* MagilityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagilityViewController.m; sourceTree = "<group>"; };
-		DD9A1D77156C1F3200DB528C /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = /Users/jonas/Projects/iOS/Magility/Magility/sv.lproj/InfoPlist.strings; sourceTree = "<absolute>"; };
-		DD9A1D78156C1F3200DB528C /* sv */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = sv; path = /Users/jonas/Projects/iOS/Magility/Magility/sv.lproj/MainStoryboard.storyboard; sourceTree = "<absolute>"; };
+		DD9A1D77156C1F3200DB528C /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD9A1D78156C1F3200DB528C /* sv */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = sv; path = sv.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		DD9A1D7E156C298400DB528C /* button-background-disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-background-disabled.png"; sourceTree = "<group>"; };
 		DD9A1D7F156C298400DB528C /* button-background-shaded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-background-shaded.png"; sourceTree = "<group>"; };
 		DD9A1D80156C298400DB528C /* button-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-background.png"; sourceTree = "<group>"; };
@@ -212,7 +212,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = Magility;
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Karnkraftsakerhet och Utbildning AB";
 			};
 			buildConfigurationList = DD9A1D50156C1DA900DB528C /* Build configuration list for PBXProject "Magility" */;
@@ -301,6 +301,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -315,7 +319,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -327,6 +331,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -334,7 +342,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
